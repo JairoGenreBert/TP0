@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    margin: auto;
+}
+/*body{
+    background-size: contain;
+    background: url("../imagenes/fondo.jpg") no-repeat, url("../imagenes/ext_fondo.jpg") repeat-y;
+    
+    background-color: #26CFEE;
+} */
+.logo{
+    width: 13vw;
+    grid-column: span 2;
+    grid-row: span 2;
+    padding: 1vw;
+
+}
+h1{
+    text-align: center;
+    color: #283755;
+    font-family: 'Lexend Deca', sans-serif;
+    grid-column-start: 3;
+    grid-column-end: -1;
+}
+h2{
+    text-align: center;
+    color: #283755;
+    font-family: 'Bebas Neue', cursive;
+}
+header{
+    /*background-color: #2D8CCD;*/
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    /*padding: 10px;*/
+    width: 100%;
+}
+footer{
+    background-color: #2D8CCD;
+    /*background-color: black; 
+    opacity: 0.5;*/
+    text-align: center;
+    /*margin-top: 10px;*/
+    padding: 5px;
+}
+nav a{
+    /*background-color: #19BEAF;*/
+    background-color: #2D8CCD;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
