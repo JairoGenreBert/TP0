@@ -1,4 +1,4 @@
-*{
+**{
     margin: 0;
     padding: 0;
 }
@@ -13,31 +13,45 @@ body{
     background-color: #26CFEE;
 } */
 .logo{
-    width: 13vw;
-    grid-column: span 2;
+    height: 100%;
+    grid-column: span 1;
     grid-row: span 2;
-    padding: 1vw;
-
+    /*grid-row-start: 1;*/
+    /*padding: 1vw;*/
+    /*background-color: #2D8CCD;*/
+    padding: 5px;
 }
 h1{
     text-align: center;
-    color: #283755;
+    /*color: #283755;*/
+    color: #064D85;
     font-family: 'Lexend Deca', sans-serif;
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: -1;
+  
 }
 h2{
     text-align: center;
-    color: #283755;
+    /*color: #283755;*/
+    color: #064D85;
     font-family: 'Bebas Neue', cursive;
+    grid-column-start: 2;
+    grid-column-end: -1;
+    overflow-y: hidden;
 }
 header{
     /*background-color: #2D8CCD;*/
+    position: sticky;
+    top: -20vh;
     background-color: white;
     display: grid;
-    grid-template-columns: repeat(6,1fr);
-    /*padding: 10px;*/
+    /*grid-template-columns: repeat(2,1fr);*/
+    grid-template-rows: 12vh 8vh 7vh;
+    grid-template-columns: 10vw 90vw;
+    align-items: center;
+    align-content: center;
     width: 100%;
+    max-height: 40vh;
 }
 footer{
     background-color: #2D8CCD;
@@ -47,10 +61,40 @@ footer{
     /*margin-top: 10px;*/
     padding: 5px;
 }
+nav{
+    background-color: #2D8CCD;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 3;
+    height: 100%;
+    display: grid;
+    /*position: sticky;
+    top: 0;*/
+    grid-template-columns: repeat(6,auto);
+    /*align-content:center;*/
+    align-items: stretch;  
+}
+.nav_about{
+    align-self: start;
+    position: sticky;
+    right: 15%;
+    top: 0;
+}
 nav a{
     /*background-color: #19BEAF;*/
-    background-color: #2D8CCD;
+    /*vertical-align: middle;*/
+    /*height: 100%;*/
+    color: white;
+    text-align: center;
+    /*vertical-align: middle;*/
+
+    /*background-color: #2D8CCD;*/
     text-decoration: none;
-    padding: 5px;
-    border-radius: 5px;
+    padding-top: 2vh;
+    /*align-self: stretch;*/
+    /*border-radius: 5px;*/    
 }
+nav a:hover{
+    background-color: #05AAA0;
+}
+
