@@ -8,12 +8,19 @@ var cadena = `
         <a href="contact.html">Contacto</a>
         <a href="form.html">Registrese</a>            
     </nav>
-`
+    <div id="id_cortina"> </div>
+    <button id="id_boton" class="button-menu"> <!-- onclick="window.location='#id_nav';" -->
+        <hr>
+        <hr>
+        <hr>
+    <span></span>
+    <span></span>
+  </button>`
 
 document.getElementById("id_header").innerHTML=cadena;
 
 cadena =`
-    <a href="https://www.facebook.com/enfermeros.rosario.terciario"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://www.facebook.com/enfermeros.rosario.terciario" target="_blank"><i class="fa-brands fa-facebook"></i></a>
     <br>
     <p>Derechos reservados @2022</div>
     <br>`

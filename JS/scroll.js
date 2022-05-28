@@ -9,6 +9,8 @@ function scrollFunction() {
     document.getElementById("id_logo").style.padding = "0.5vh 4vw 0.5vh 4vw";
     document.getElementById("id_logo").style.marginLeft = 0;
     document.getElementById("id_nav").style.gridColumnStart = 2;
+    document.getElementById("id_cortina").style.gridColumnStart = 2;
+    document.getElementById("id_nav").style.marginLeft = "3vw";
     console.log("Abajo");
 
   } else {
@@ -16,6 +18,8 @@ function scrollFunction() {
     document.getElementById("id_logo").style.padding = 0;
     document.getElementById("id_logo").style.marginLeft = "1vw";
     document.getElementById("id_nav").style.gridColumnStart = 1;
+    document.getElementById("id_cortina").style.gridColumnStart = 1;
+    document.getElementById("id_nav").style.marginLeft = 0;
     console.log("Arriba");
   }
 }
