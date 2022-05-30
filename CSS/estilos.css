@@ -1,3 +1,4 @@
+/*DESKTOP y tamaños mayores*/
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +6,10 @@
 }
 p{
     font-family: 'Libre Baskerville', serif;
+    font-size: 2vw;
+    padding: 2vw;
 }
+
 body{
     width: 100%;
     margin: auto;
@@ -141,24 +145,78 @@ h3{
     margin: 2vw;
     font-size: 2vw;
 }
-p{
-    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
-    font-size: 2vw;
 
-}
 
+/*ABOUT*/
 #id_puerta{
     /*margin: 10vh 10vw;*/
-    width: 50vw;
+    float: left;
+    width: 50%;
+    margin: 2vw;
+    min-width: 720px;
+}
+
+.texto_about{
+    text-align: justify;
+    padding: 2vw;
+}
+/*PREINSCRIPCION*/
+#id_folleto_pre{
+    display: block;
+    width: 75vw;
+    min-width: 540px;
+    margin: 5vh auto 5vh auto;
+}
+.main_pre hr{
+    width: 90%;
+    margin: 2vw auto 2vw auto;
+    display: block;
+}
+
+
+.main_pre ol{
+    margin: 5vw;
+    font-size: 2vw;
+}
+
+
+/*CONTACTO*/
+label, input{
+    font-size: 1 vw;
+    margin: 1vw;
+    padding: 1vw;
+}
+input{
+    width: 90%;
+    height:auto;
+}
+input[id="country_code"], input[id="area_code"]{
+    width: 15%;
+}
+input[id="phone_number"]{
+    width: 40%;
+}
+input[id="message"]{
+    inline-size: 90%;
+    overflow-wrap: break-word;
+    height: 15vh;
+   
+
+    
+  
+}
+iframe{
+    width: 80%;
+    margin: auto;
+    padding: 1 vw;
 }
 
 #id_main_contact{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5,1fr);
-    gap: 3vw;
+    grid-template-rows: 2fr 10fr 5fr;
+    gap: 1vw;
     align-items: center;
-    align-content: center;
     width: 100%;
 
 }
@@ -170,29 +228,82 @@ p{
 
 
 #id_form_cont{
+    margin: 2vw;
+    padding: 1vw;
     grid-column-start: 1;
     grid-row: 2/-1;
+    border-color: #064D85;
+    border-style: groove;
+    border-radius: 1vw;
 }
 
 iframe{
     grid-column-start: 2;
-    grid-row: 2/4;
+    grid-row: 2/3;
+    border-color: #064D85;
+    border-style: groove;
+    border-radius: 1vw;
+
 }
+
 #id_contacto{
+    padding: 1vw;
+    margin: 2vw;
+    padding: 1vw;
+    margin: 2vw;
+    border-color: #064D85;
+    border-style: groove;
+    border-radius: 1vw;
     grid-column-start: 2;
-    grid-row: 4/-1;   
-    display: flex;
-    flex-direction: column; 
+    grid-row: 3/-1;   
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 20% 80%;
 }
-#id_contacto > *{
-    display: inline;
-}
+/*#id_contacto > *{
+    
+}*/
 #id_contacto *{
     font-size: 1vw;
 }
 
+#id_lista_contacto{
+    list-style-type: none;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
 
+#id_titulo_lista_contacto{
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
 
+#id_logo_contacto{
+    width: 8vw;
+    grid-column-start: 1;
+    grid-row: 1/-1;
+
+}
+
+/*INDEX*/
+/*
+.noticias{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+}*/
+
+.noticias img{
+    display: block;
+    width: 65vw;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    margin-left:auto;
+    margin-right: auto;
+
+}
+/*FOOTER*/
 footer{
     background-color: #2D8CCD;
     /*background-color: black; 
@@ -201,7 +312,7 @@ footer{
     /*margin-top: 10px;*/
     padding: 2vw;
 }
-.fa-brands{
+footer .fa-brands{
     /*color: #273755;*/
     color: white;
     font-size: 10vh;
@@ -211,7 +322,9 @@ footer p{
     color: white;
 }
 
-@media only screen and (max-width: 599px) {
+
+/*TABLETS y tal vez algunos celulares en landscape*/
+@media only screen and (max-width: 768px) {
     #id_nav{
         transition: .5s;
         grid-template-columns: 1fr;
@@ -252,4 +365,44 @@ footer p{
     .button-menu.close hr:nth-child(3){
         display: none;
     }
+    /*ABOUT*/
+    #id_puerta{
+        width: 93.75vw;
+        min-width: 0;
+        display: block;
+        margin: 3.125 vw;
+    }
+    
+    /*CONTACTO*/
+      
+    #id_main_contact{
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 6fr 4fr 2fr;
+    }
+    
+    #id_main_contact h3{
+        grid-row-start: 1; 
+    }
+    
+    
+    #id_form_cont{
+        grid-row: 2/3;
+    }
+    
+    iframe{
+        grid-column-start: 1;
+        grid-row: 3/4;
+    }
+    
+    #id_contacto{
+        grid-column-start: 1;
+        grid-row: 4/-1;   
 }
+
+@media only screen and (max-width: 768px) {
+    #id_folleto_pre{
+        width: 90vw;
+    }
+
+}
+
