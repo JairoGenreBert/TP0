@@ -17,11 +17,59 @@
         <header id="id_header">
         </header>
 
-        <main>
+        <main id="id_main_contact">
             <h3>Contacto</h3>
-            <a href="mailto:cqkqopimrjvnndgvla@nvhrw.com">esealumnos@gmail.com</a>
 
+            <span id="id_form_cont">
+                <form name="fvalida">
+                    <label for="firstname">Nombre</label>
+                    <br>
+                    <input type="text" name="firstname" id="firstname">
+                    <br>
+                    <label for="lastname">Apellido</label>
+                    <br>
+                    <input type="text" name="lastname" id="lastname">
+                    <br>
+                    <label for="mail">E-Mail</label>
+                    <br>
+                    <input type="text" name="mail" id="mail">
+                    <br>
+                    <label for="phone">Teléfono</label>
+                    <br>
+                    <input type="text" name="phone" id="country_code" placeholder="Cód. País">
+                    <input type="number" name="phone" id="area_code" placeholder="cód. Area">
+                    <input type="number" name="phone" id="phone_number" placeholder="Nº sin el 15">
+                    <br>
+                    <label for="subject">Asunto</label>
+                    <br>
+                    <input type="text" name="subject" id="subject">
+                    <br>
+                    <label for="message">Mensaje</label>
+                    <br>
+                    <input type="text" name="message" id="message">
+                    <br>
+                    <input type="checkbox" id="terms" name="terms" value="accept">
+                    <br>
+                    <label for="terms"> Acepto los <strong>Términos y condiciones</strong> y las <strong>Políticas de privacidad.</strong></label>
+                    <br>
+                    <input type="button" value="Enviar" onclick="valida_envia()">
+                </form>
+            </span>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.8050460254653!2d-60.63274798579083!3d-32.95615618091833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab0225da37c3%3A0xec199c720e33c4e9!2sLeandro%20N.%20Alem%201450%2C%20S2000BZL%20Rosario%2C%20Santa%20Fe!5e0!3m2!1ses!2sar!4v1648995614483!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="id_contacto">
+                <div><img class="logo" src="imagenes/logo-entero.jpg" alt="Logo de la escuela"></div>
+                <div>
+                    <p><strong>Escuela superior de enfermería: María Elena Araya de Colombres</strong></p>
+                    <p>Dirección: Alem N° 1450, Rosario, Santa Fe</p>
+                    <p>Facebook: <a href="https://www.facebook.com/enfermeros.rosario.terciario" target="_blank">/enfermeros.rosario.terciario</a></p>
+                    <p>Mail: <a href="mailto:cqkqopimrjvnndgvla@nvhrw.com">esealumnos@gmail.com</a></p>
+                    <p>Teléfono:  <a href="tel:03414721492">0341-4721492</a> </p>
+                    <p>Horarios: Lunes a Viernes de 7:00 a 13:00</p>
+                </div>
+                
+
+            </div>
+
         </main>
 
         <footer id="id_footer">
@@ -31,5 +79,7 @@
         <script src="JS/header_footer.js"></script>
         <script src="JS/scroll.js"></script> 
         <script src="JS/menu_hamburgueja.js"></script> 
+        <script src="JS/validacion_contacto.js"></script> 
+
     </body>
 </html>

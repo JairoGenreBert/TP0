@@ -44,6 +44,9 @@ header{
     /*background-color: #2D8CCD;*/
     background-color: #2D8CCD;
 }
+/*.logo{
+    width: 7vw;
+}*/
 header h1{
     padding-right: 10vw;
     text-align: center;
@@ -52,10 +55,12 @@ header h1{
     font-family: 'Lexend Deca', sans-serif;
     grid-column-start: 2;
     grid-column-end: -1;
+    font-size: 3.5vw;
   
 }
 header h2{
     padding-right: 10vw;
+    padding-bottom: 2vh;
     text-align: center;
     /*color: #283755;*/
     color: #064D85;
@@ -63,6 +68,7 @@ header h2{
     grid-column-start: 2;
     grid-column-end: -1;
     overflow-y: hidden;
+    font-size: 2.5vw;
 }
 nav{
     background-color: #2D8CCD;
@@ -91,7 +97,8 @@ nav a{
     text-decoration: none;
     padding-top: 2vh;
     /*align-self: stretch;*/
-    /*border-radius: 5px;*/   
+    /*border-radius: 5px;*/  
+    font-size: 1.5vw 
 }
 #id_nav a:hover{
     background-color: #05AAA0;
@@ -126,29 +133,73 @@ hr{
     width: 4vh;
     transition: 0.5s;
 }
-main{
-    padding: 5vh 5vw; 
-}
+
 h3{
     text-align: center;
     font-family: 'Anton', sans-serif;
     color: #273755;
+    margin: 2vw;
+    font-size: 2vw;
 }
 p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
-img{
-    margin: 10vh 10vw;
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+    font-size: 2vw;
 
 }
+
+#id_puerta{
+    /*margin: 10vh 10vw;*/
+    width: 50vw;
+}
+
+#id_main_contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5,1fr);
+    gap: 3vw;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+
+}
+
+#id_main_contact h3{
+    grid-column: 1/-1;
+    grid-row-start: 1; 
+}
+
+
+#id_form_cont{
+    grid-column-start: 1;
+    grid-row: 2/-1;
+}
+
+iframe{
+    grid-column-start: 2;
+    grid-row: 2/4;
+}
+#id_contacto{
+    grid-column-start: 2;
+    grid-row: 4/-1;   
+    display: flex;
+    flex-direction: column; 
+}
+#id_contacto > *{
+    display: inline;
+}
+#id_contacto *{
+    font-size: 1vw;
+}
+
+
+
 footer{
     background-color: #2D8CCD;
     /*background-color: black; 
     opacity: 0.5;*/
     text-align: center;
     /*margin-top: 10px;*/
-    padding: 5px;
+    padding: 2vw;
 }
 .fa-brands{
     /*color: #273755;*/

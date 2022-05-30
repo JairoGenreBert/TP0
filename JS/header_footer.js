@@ -5,8 +5,7 @@ var cadena = `
     <nav id=id_nav>        
         <a href="index.html">Home</a>
         <a href="about.html">Acerca De</a>
-        <a href="contact.html">Contacto</a>
-        <a href="form.html">Registrese</a>            
+        <a href="contact.html">Contacto</a>          
     </nav>
     <div id="id_cortina"> </div>
     <button id="id_boton" class="button-menu"> <!-- onclick="window.location='#id_nav';" -->
